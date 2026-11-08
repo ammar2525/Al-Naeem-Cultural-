@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="الموقع الرسمي للجنة مركز النعيم الثقافي والتراثي، المنبثقة من مركز تمكين شباب النعيم وتحت رعايته: ذاكرة حية للنعيم.">
+<meta property="og:title" content="لجنة مركز النعيم الثقافي والتراثي">
+<meta property="og:description" content="الموقع الرسمي للجنة مركز النعيم الثقافي والتراثي، المنبثقة من مركز تمكين شباب النعيم وتحت رعايته: ذاكرة حية للنعيم.">
+<meta property="og:image" content="img/lajna-logo.png">
+<link rel="icon" type="image/png" href="img/lajna-logo.png">
+<title>لجنة مركز النعيم الثقافي والتراثي</title>
+<script>document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: one long RTL scroll — an archway hero, then sea-blue and sand bands that alternate like tide lines; the five beads are the page's one interactive moment. */
+:root{
+  --sand:#F4ECDD; --paper:#FBF7EF; --ink:#12343B; --muted:#55666A;
+  --teak:#8C4F25; --bead:#C99A3B; --line:#DCCFB7; --deep:#12343B; --on-deep:#F4ECDD;
+  --plate:#FFFFFF; --focus:#8C4F25; --back:#13796E; --on-back:#FFFFFF;
+  --display:'Reem Kufi', 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+  --body:'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+  --voice:'Amiri', 'Times New Roman', serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --sand:#0E2328; --paper:#14303A; --ink:#EEE5D3; --muted:#A9B8B6;
+  --teak:#D8955F; --bead:#D9AE55; --line:#2A4950; --deep:#081A1E; --on-deep:#EEE5D3; --focus:#D9AE55; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --sand:#0E2328; --paper:#14303A; --ink:#EEE5D3; --muted:#A9B8B6;
+  --teak:#D8955F; --bead:#D9AE55; --line:#2A4950; --deep:#081A1E; --on-deep:#EEE5D3; --focus:#D9AE55; color-scheme:dark}
+
+html,body{direction:rtl;text-align:right}
+*{box-sizing:border-box}
+body{background:var(--sand);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.8}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sand)}
+a{color:var(--teak)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.3}
+h2{font-size:clamp(28px,4vw,40px)}
+p{margin:0}
+.eyebrow{font-size:14px;font-weight:600;color:var(--teak);letter-spacing:.02em}
+section{padding-block:72px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--sand);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand b{font-family:var(--display);font-size:17px;font-weight:600;line-height:1.3}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:15px;padding:8px 10px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
+nav a:hover{background:var(--paper)}
+@media (max-width:760px){nav{display:none}}
+
+/* hero */
+.hero{padding-block:56px 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,6.2vw,72px);font-weight:700;line-height:1.15}
+.hero .kicker{font-family:var(--display);font-size:clamp(22px,3vw,30px);font-weight:600;color:var(--muted);line-height:1.2}
+.hero .sub{font-family:var(--display);font-size:clamp(20px,2.6vw,26px);color:var(--teak);margin-top:6px}
+.hero .lead{font-size:19px;max-width:34em;margin-top:22px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{font-family:var(--body);font-size:16px;font-weight:600;border-radius:10px;padding:12px 22px;min-height:48px;display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;border:2px solid transparent}
+.btn-main{background:var(--deep);color:var(--on-deep)}
+.btn-main:hover{background:var(--teak)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--paper)}
+.arch{width:100%;max-width:380px;justify-self:center}
+.arch svg{width:100%;height:auto;display:block}
+.patron{display:flex;align-items:center;gap:14px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);flex-wrap:wrap}
+.plate{background:var(--plate);border-radius:12px;padding:6px 10px;display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap}
+.plate img.yc{height:58px;width:auto}
+.plate img.moya{height:30px;width:auto}
+.patron small{font-size:14px;color:var(--muted);line-height:1.5}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.arch{order:-1;max-width:220px}}
+
+/* about band */
+.about{background:var(--deep);color:var(--on-deep)}
+.about .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px}
+.about .eyebrow{color:var(--bead)}
+.about blockquote{margin:0;font-family:var(--voice);font-size:clamp(24px,3vw,32px);line-height:1.6}
+.about .txt{display:flex;flex-direction:column;gap:16px;max-width:38em}
+@media (max-width:820px){.about .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* themes */
+.head{display:flex;flex-direction:column;gap:8px;margin-bottom:36px;max-width:40em}
+.themes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.theme{background:var(--paper);padding:22px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.theme h3{font-size:20px;font-weight:600}
+.theme p{font-size:15px;color:var(--muted);line-height:1.7}
+.theme svg{width:34px;height:34px;color:var(--teak)}
+@media (max-width:900px){.themes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.themes{grid-template-columns:1fr}}
+
+/* areas — the beads */
+.areas{background:var(--paper);border-block:1px solid var(--line)}
+.beads{position:relative;max-width:860px;margin:8px auto 0}
+.beads svg{width:100%;height:auto;display:block;overflow:visible}
+.bead-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:-6px}
+.bead-btn{font-family:var(--display);font-size:17px;background:transparent;border:2px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 6px;min-height:44px;cursor:pointer}
+.bead-btn[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:var(--on-deep)}
+.bead-btn:hover{border-color:var(--teak)}
+.area-card{margin:28px auto 0;max-width:640px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.area-card h3{font-size:28px}
+.area-card p{color:var(--muted)}
+circle.b{transition:r .25s ease, fill .25s ease;cursor:pointer}
+@media (prefers-reduced-motion: reduce){circle.b{transition:none}}
+@media (max-width:560px){.bead-row{grid-template-columns:repeat(2,minmax(0,1fr))}.bead-btn{font-size:15px}}
+
+/* participate */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:s}
+.step{display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:3px solid var(--bead);min-width:0}
+.step .n{font-family:var(--display);font-size:30px;color:var(--teak);line-height:1}
+.step h3{font-size:21px}
+.step p{font-size:15px;color:var(--muted);line-height:1.7}
+@media (max-width:820px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.steps{grid-template-columns:1fr}}
+.share-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;margin-top:56px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.box h3{font-size:22px}
+.box ul{margin:0;padding-inline-start:20px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:820px){.share-grid{grid-template-columns:1fr}}
+
+/* composer */
+.composer{background:var(--deep);color:var(--on-deep)}
+.composer .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:44px;align-items:start}
+.composer .eyebrow{color:var(--bead)}
+.composer .intro{display:flex;flex-direction:column;gap:14px}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label{font-size:14px;font-weight:600}
+input,select,textarea{font-family:var(--body);font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:46px;width:100%}
+textarea{min-height:110px;resize:vertical;line-height:1.7}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;line-height:1.6}
+.check input{width:20px;min-height:20px;height:20px;margin-top:3px;flex:none}
+.out{grid-column:1/-1;background:var(--paper);color:var(--ink);border-radius:12px;padding:16px;white-space:pre-wrap;font-size:15px;line-height:1.8;user-select:all}
+.row{grid-column:1/-1;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.composer .btn-main{background:var(--bead);color:#12343B}
+.composer .btn-main:hover{background:var(--on-deep)}
+.composer .btn-line{border-color:var(--on-deep);color:var(--on-deep)}
+.composer .btn-line:hover{background:transparent;border-color:var(--bead);color:var(--bead)}
+.status{font-size:14px;color:var(--bead)}
+.err{font-size:14px;color:var(--bead)}
+@media (max-width:820px){.composer .wrap{grid-template-columns:1fr}}
+@media (max-width:480px){form{grid-template-columns:1fr}}
+
+/* back to top — one pill at the end of every section */
+.back-row{grid-column:1/-1;display:flex;justify-content:flex-end;margin-top:40px}
+.back{display:inline-flex;align-items:center;gap:8px;background:var(--back);color:var(--on-back);text-decoration:none;font-family:var(--body);font-size:16px;font-weight:600;border-radius:999px;padding:10px 22px;min-height:44px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.back:hover{filter:brightness(1.12)}
+.back svg{width:16px;height:16px}
+
+footer{padding-block:40px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer p{font-size:14px;color:var(--muted)}
+</style>
+<style>body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+</head>
+<body>
+<header dir="rtl">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="لجنة مركز النعيم الثقافي والتراثي — أعلى الصفحة">
+      <svg width="34" height="37" viewBox="0 0 200 220" aria-hidden="true"><use href="#mark"></use></svg>
+      <b>لجنة مركز النعيم<br>الثقافي والتراثي</b>
+    </a>
+    <nav aria-label="أقسام الموقع">
+      <a href="#about">عن اللجنة</a>
+      <a href="#themes">المحاور</a>
+      <a href="#areas">المناطق الخمس</a>
+      <a href="#join">كيف تشارك</a>
+      <a href="#send">أرسل مساهمتك</a>
+    </nav>
+  </div>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="mark">
+      <path d="M24 210 H176" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path>
+      <path d="M36 210 V96 C36 52 64 26 100 14 C136 26 164 52 164 96 V210" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"></path>
+      <circle cx="63" cy="92.6" r="7" fill="var(--bead)"></circle><circle cx="77" cy="82.5" r="8" fill="var(--bead)"></circle><circle cx="100" cy="76" r="11" fill="var(--teak)"></circle><circle cx="123" cy="82.5" r="8" fill="var(--bead)"></circle><circle cx="137" cy="92.6" r="7" fill="var(--bead)"></circle>
+      <path d="M42 138 L58 150 H150 L160 140 C156 162 136 180 100 180 C70 180 52 166 42 138 Z" fill="var(--teak)"></path>
+      <path d="M52 198 q12 -8 24 0 t24 0 t24 0 t24 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path>
+    </g>
+  </defs>
+</svg>
+
+<main id="top" dir="rtl">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span class="kicker">لجنة</span><br>مركز النعيم الثقافي والتراثي</h1>
+      <p class="sub">ذاكرة حية للنعيم</p>
+      <p class="lead">نجمع تاريخ النعيم وموروثها في مكان واحد: صور البيوت والفرجان، ووثائق العائلات، وحكايات البحر والقلافة، وأصوات من عاشوا تلك الأيام. وهذه الذاكرة يكتبها أهل النعيم أنفسهم.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="#send">شارك ذاكرتك</a>
+        <a class="btn btn-line" href="#about">تعرّف على اللجنة</a>
+      </div>
+      <div class="patron">
+        <span class="plate">
+          <img class="yc" src="img/yc.png" alt="شعار مركز تمكين شباب النعيم">
+          <img class="moya" src="img/moya.png" alt="شعار وزارة شؤون الشباب">
+        </span>
+        <small>لجنة منبثقة من مركز تمكين شباب النعيم<br>وتحت رعايته</small>
+      </div>
+    </div>
+    <div class="arch" style="color:var(--ink)">
+      <svg viewBox="0 0 200 220" role="img" aria-label="شعار اللجنة: قوس تعلوه خمس حبات مسبحة فوق بدن سفينة وموج"><use href="#mark"></use></svg>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p class="eyebrow">عن اللجنة</p>
+      <blockquote>لكل بيت في النعيم حكاية، ولكل حكاية مكان في هذه الذاكرة.</blockquote>
+    </div>
+    <div class="txt">
+      <p>لجنة مركز النعيم الثقافي والتراثي لجنة مجتمعية منبثقة من مركز تمكين شباب النعيم وتحت رعايته، تأسست بعد أن تبنّى المركز مشروع حفظ ذاكرة النعيم.</p>
+      <p>تعمل اللجنة على توثيق تاريخ المنطقة ومناطقها الخمس، وحفظ ما تحتفظ به البيوت من صور ووثائق وأدوات وروايات، وتقديمها للأجيال القادمة في صورة منظمة يُرجع إليها.</p>
+      <p>ويستند عمل اللجنة إلى دراسة تفصيلية للمشروع، ويسعدنا أن يطّلع عليها المهتمون ويبدوا ملاحظاتهم ومقترحاتهم.</p>
+    </div>
+    <div class="back-row"><a class="back" href="#top">رجوع <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></a></div>
+  </div>
+</section>
+
+<section id="themes">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">محاور العمل</p>
+      <h2>ما الذي نحفظه؟</h2>
+    </div>
+    <div class="themes">
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 13l2 3h14l2-3"></path><path d="M5 16c1 3 4 4 7 4s6-1 7-4"></path><path d="M12 13V4"></path><path d="M9 16v3M15 16v3"></path></svg><h3>القلافة</h3><p>صناعة السفن الخشبية وأدواتها وأسماء من عملوا فيها.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"></path><path d="M2 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0"></path><path d="M12 11V3l5 6h-5"></path></svg><h3>البحر ومهنه</h3><p>البحارة والصيد والغوص وكل ما ارتبط بالساحل.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"></path><path d="M12 6l6 6"></path></svg><h3>الحرف التقليدية</h3><p>النجارة والحرف اليدوية التي عاش منها أهل النعيم.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"></path><path d="M10 20v-6h4v6"></path></svg><h3>تاريخ النعيم</h3><p>نشأة المنطقة وفرجانها ومساجدها ومعالمها وتحولاتها.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0014 0M12 18v3"></path></svg><h3>أصوات الكبار</h3><p>روايات شفهية من كبار السن، تُسجَّل بإذنهم.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"></rect><path d="M3 15l5-4 4 3 3-2 6 4"></path></svg><h3>الصور والوثائق</h3><p>أرشيف للصور القديمة والمستندات والمخطوطات العائلية.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg><h3>شخصيات النعيم</h3><p>من خدموا المنطقة وتركوا أثراً في حياة أهلها.</p></div>
+      <div class="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="9" r="3"></circle><circle cx="17" cy="9" r="3"></circle><path d="M2 20c1-3 3-5 5-5s4 2 5 5c1-3 3-5 5-5s4 2 5 5"></path></svg><h3>الحياة الاجتماعية</h3><p>العادات والمناسبات وروابط التكافل بين الأهالي.</p></div>
+    </div>
+    <div class="back-row"><a class="back" href="#top">رجوع <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></a></div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="head" style="margin-inline:auto;text-align:center;align-items:center">
+      <p class="eyebrow">المناطق الخمس</p>
+      <h2>خمس حبات… في مسبحة واحدة</h2>
+      <p style="color:var(--muted)">لكل منطقة طابعها وحكايتها، ويجمعها خيط واحد اسمه النعيم. اختر منطقتك.</p>
+    </div>
+    <div class="beads">
+      <svg viewBox="0 0 800 210" aria-hidden="true">
+        <path d="M30 190 Q400 -40 770 190" fill="none" stroke="var(--bead)" stroke-width="2.5"></path>
+        <circle class="b" data-i="0" cx="690" cy="140" r="30" fill="var(--bead)"></circle>
+        <circle class="b" data-i="1" cx="545" cy="83" r="34" fill="var(--bead)"></circle>
+        <circle class="b" data-i="2" cx="400" cy="65" r="44" fill="var(--teak)"></circle>
+        <circle class="b" data-i="3" cx="255" cy="83" r="34" fill="var(--bead)"></circle>
+        <circle class="b" data-i="4" cx="110" cy="140" r="30" fill="var(--bead)"></circle>
+      </svg>
+      <div class="bead-row" role="group" aria-label="مناطق النعيم الخمس">
+        <button type="button" class="bead-btn" data-i="0" aria-pressed="false">النعيم الشرقي</button>
+        <button type="button" class="bead-btn" data-i="1" aria-pressed="false">النعيم الجنوبي</button>
+        <button type="button" class="bead-btn" data-i="2" aria-pressed="true">النعيم الوسطي</button>
+        <button type="button" class="bead-btn" data-i="3" aria-pressed="false">النعيم الغربي</button>
+        <button type="button" class="bead-btn" data-i="4" aria-pressed="false">البرهامة</button>
+      </div>
+    </div>
+    <div class="area-card" aria-live="polite">
+      <h3 id="areaName">النعيم الوسطي</h3>
+      <p id="areaText">ما الذي تحفظه ذاكرتك عن النعيم الوسطي؟ بيت، أو فريج، أو مسجد، أو مأتم، أو وجه تتذكره؟ شاركنا لتكتمل حكاية منطقتك.</p>
+      <a class="btn btn-main" id="areaCta" href="#send">شارك من النعيم الوسطي</a>
+    </div>
+    <div class="back-row"><a class="back" href="#top">رجوع <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></a></div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">كيف تشارك</p>
+      <h2>من متابع… إلى شريك في الذاكرة</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">١</span><h3>اختر ما لديك</h3><p>صورة قديمة، أو وثيقة، أو أداة، أو حكاية سمعتها من كبار العائلة.</p></div>
+      <div class="step"><span class="n">٢</span><h3>جهّز رسالتك</h3><p>املأ النموذج أدناه، فيجهّز لك نص المساهمة مرتباً.</p></div>
+      <div class="step"><span class="n">٣</span><h3>أرسلها لنا</h3><p>انسخ النص وأرسله مع الصور عبر الرسائل الخاصة.</p></div>
+      <div class="step"><span class="n">٤</span><h3>تُحفظ باسمك</h3><p>تدخل مساهمتك أرشيف اللجنة، وتُنشر منسوبة إليك إن أذنت بذلك.</p></div>
+    </div>
+    <div class="share-grid">
+      <div class="box">
+        <h3>ما الذي يمكنك مشاركته؟</h3>
+        <ul>
+          <li>صور البيوت والفرجان والمناسبات القديمة</li>
+          <li>الوثائق والمستندات والرسائل العائلية</li>
+          <li>أدوات القلافة والبحر والحرف المحفوظة في البيوت</li>
+          <li>حكايات وذكريات وأسماء أماكن وأشخاص</li>
+          <li>استعدادك لتسجيل رواية أحد كبار السن من عائلتك</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>التزامنا معك</h3>
+        <ul>
+          <li>لا ننشر صورة أو اسماً أو رواية دون إذن صاحبها</li>
+          <li>ننسب كل مساهمة إلى صاحبها عند نشرها</li>
+          <li>نحفظ المساهمات في أرشيف اللجنة حتى لو لم تُنشر</li>
+          <li>ما لم يُتحقق منه نعرضه سؤالاً، لا معلومة مؤكدة</li>
+        </ul>
+      </div>
+    </div>
+    <div class="back-row"><a class="back" href="#top">رجوع <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></a></div>
+  </div>
+</section>
+
+<section class="composer" id="send">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow">أرسل مساهمتك</p>
+      <h2>جهّز رسالتك في دقيقة</h2>
+      <p>املأ الحقول، ثم انسخ النص الجاهز وأرسله مع صورك عبر الرسائل الخاصة على الإنستغرام. هذا النموذج لا يرسل شيئاً بنفسه، ولا يحفظ بياناتك.</p>
+      <p style="font-size:15px">تُرسل المساهمات إلى حساب لجنة مركز النعيم الثقافي والتراثي على الإنستغرام:</p>
+      <p style="font-family:var(--display);font-size:22px;color:var(--bead);user-select:all" dir="ltr">@naim.yc.heritage</p>
+      <p><a class="btn btn-line" href="https://www.instagram.com/naim.yc.heritage/" target="_blank" rel="noopener">افتح حساب اللجنة</a></p>
+    </div>
+    <form id="form" novalidate>
+      <div class="f"><label for="name">الاسم</label><input id="name" autocomplete="name" placeholder="اسمك كما تحب أن يُنسب"></div>
+      <div class="f"><label for="area">المنطقة</label>
+        <select id="area"><option>النعيم الشرقي</option><option>النعيم الجنوبي</option><option selected>النعيم الوسطي</option><option>النعيم الغربي</option><option>البرهامة</option><option>من خارج النعيم</option></select></div>
+      <div class="f"><label for="kind">نوع المساهمة</label>
+        <select id="kind"><option>صورة قديمة</option><option>وثيقة أو مستند</option><option>أداة أو قطعة تراثية</option><option>حكاية أو ذكرى</option><option>ترشيح راوٍ من كبار السن</option></select></div>
+      <div class="f"><label for="era">الزمن التقريبي</label><input id="era" placeholder="مثلاً: الستينات، أو قبل ٥٠ سنة"></div>
+      <div class="f full"><label for="desc">وصف قصير</label><textarea id="desc" placeholder="ماذا تُظهر الصورة؟ من فيها؟ أين التُقطت؟ أو اكتب حكايتك باختصار"></textarea></div>
+      <label class="check f full" for="consent"><input type="checkbox" id="consent" checked> أوافق على نشر المساهمة منسوبة إلى اسمي</label>
+      <div class="row">
+        <button type="submit" class="btn btn-main">جهّز النص</button>
+        <span class="err" id="err" hidden>اكتب وصفاً قصيراً لمساهمتك أولاً.</span>
+      </div>
+      <div class="out" id="out" hidden tabindex="0" aria-label="نص المساهمة الجاهز"></div>
+      <div class="row" id="copyRow" hidden>
+        <button type="button" class="btn btn-line" id="copy">انسخ النص</button>
+        <span class="status" id="status" role="status"></span>
+      </div>
+    </form>
+    <div class="back-row"><a class="back" href="#top">رجوع <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></a></div>
+  </div>
+</section>
+</main>
+
+<footer dir="rtl">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:12px">
+      <svg width="40" height="44" viewBox="0 0 200 220" aria-hidden="true" style="color:var(--ink)"><use href="#mark"></use></svg>
+      <p><b style="color:var(--ink);font-family:var(--display);font-size:16px">لجنة مركز النعيم الثقافي والتراثي</b><br>منبثقة من مركز تمكين شباب النعيم وتحت رعايته</p>
+    </div>
+    <span class="plate"><img class="yc" src="img/yc.png" alt="شعار مركز تمكين شباب النعيم"><img class="moya" src="img/moya.png" alt="شعار وزارة شؤون الشباب"></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var areas=['النعيم الشرقي','النعيم الجنوبي','النعيم الوسطي','النعيم الغربي','البرهامة'];
+  var base=[30,34,44,34,30];
+  var btns=[].slice.call(document.querySelectorAll('.bead-btn'));
+  var dots=[].slice.call(document.querySelectorAll('circle.b'));
+  function pick(i){
+    btns.forEach(function(b,k){b.setAttribute('aria-pressed',k===i?'true':'false')});
+    dots.forEach(function(d,k){d.setAttribute('r',k===i?base[k]+8:base[k]);d.setAttribute('fill',k===i?'var(--teak)':'var(--bead)')});
+    var n=areas[i];
+    document.getElementById('areaName').textContent=n;
+    document.getElementById('areaText').textContent='ما الذي تحفظه ذاكرتك عن '+n+'؟ بيت، أو فريج، أو مسجد، أو مأتم، أو وجه تتذكره؟ شاركنا لتكتمل حكاية منطقتك.';
+    document.getElementById('areaCta').textContent='شارك من '+n;
+    document.getElementById('area').value=n;
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){pick(+b.dataset.i)})});
+  dots.forEach(function(d){d.addEventListener('click',function(){pick(+d.dataset.i)})});
+
+  var form=document.getElementById('form'), out=document.getElementById('out');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()};
+    var err=document.getElementById('err');
+    if(!v('desc')){err.hidden=false;document.getElementById('desc').focus();return}
+    err.hidden=true;
+    var lines=['مساهمة لذاكرة النعيم','',
+      'الاسم: '+(v('name')||'—'),
+      'المنطقة: '+v('area'),
+      'نوع المساهمة: '+v('kind'),
+      'الزمن التقريبي: '+(v('era')||'غير محدد'),
+      '','الوصف:',v('desc'),'',
+      document.getElementById('consent').checked?'أوافق على نشرها منسوبة إلى اسمي.':'أرجو حفظها في الأرشيف دون نشر اسمي.'];
+    out.textContent=lines.join('\n');
+    out.hidden=false; document.getElementById('copyRow').hidden=false;
+    document.getElementById('status').textContent='';
+  });
+  var calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  [].slice.call(document.querySelectorAll('a.back')).forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:calm?'auto':'smooth'});
+      var b=document.querySelector('.brand'); if(b){try{b.focus({preventScroll:true})}catch(x){}}
+    });
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    var s=document.getElementById('status');
+    function sel(){var r=document.createRange();r.selectNodeContents(out);var w=getSelection();w.removeAllRanges();w.addRange(r);s.textContent='حدّدتُ النص، انسخه يدوياً.'}
+    try{navigator.clipboard.writeText(out.textContent).then(function(){s.textContent='نُسخ النص.'},sel)}catch(x){sel()}
+  });
+})();
+</script>
+</body>
+</html>
